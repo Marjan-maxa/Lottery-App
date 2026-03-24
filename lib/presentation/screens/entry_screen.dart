@@ -21,10 +21,10 @@ class _EntryScreenState extends State<EntryScreen> {
     return GradientScaffold(
         title: AppStrings.entryTitle,
         body: Padding(
-          padding: const EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(25.0),
           child: Column(
             children: [
-             const SizedBox(width: .infinity,height: 150,),
+             const SizedBox(width: .infinity,height: 160,),
               Icon(Icons.casino,size: 100,color: AppColors.accentCyan,),
               const SizedBox(width: .infinity,height: 12,),
               Text(AppStrings.entryHeading,style: const TextStyle(
@@ -89,7 +89,7 @@ class _EntryScreenState extends State<EntryScreen> {
                     }),
               ),
               
-                const SizedBox(height: 35,),
+                const SizedBox(height: 45,),
               SizedBox(
                 height: 55,
                 child: ElevatedButton(
@@ -112,7 +112,13 @@ class _EntryScreenState extends State<EntryScreen> {
                         Text(AppStrings.playLotteryAction,style: TextStyle(fontWeight: FontWeight.bold,color: _selectedNumber != null? AppColors.buttonForeground:AppColors.white),)
                       ],
                     )),
-              )
+              ),
+              const SizedBox(height: 35,),
+             Text(AppStrings.goodLuck,style: TextStyle(
+               fontSize: 15,
+               fontWeight: FontWeight.bold,
+               color: AppColors.white
+             ))
             ]
           ),
         ),

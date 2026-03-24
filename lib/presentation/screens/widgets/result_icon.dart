@@ -17,7 +17,7 @@ class _ResultIconState extends State<ResultIcon> {
       width: 110,
       decoration: BoxDecoration(
         shape: .circle,
-        color: widget.isWinner? AppColors.accentCyan:AppColors.whiteOpacity30,
+        color: widget.isWinner? AppColors.winCyan:AppColors.whiteOpacity30,
         
 
       ),
