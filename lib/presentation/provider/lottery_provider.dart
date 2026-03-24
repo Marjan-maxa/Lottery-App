@@ -19,7 +19,7 @@ class LotteryProvider extends ChangeNotifier {
   bool get canplay=>_selectedNumber!=null;
 
   bool isValidNumber(int number){
-    return number>1 && number<=10;
+    return number>=1 && number<=10;
   }
   void setSelectedNumber(int number){
     if(isValidNumber(number)){
